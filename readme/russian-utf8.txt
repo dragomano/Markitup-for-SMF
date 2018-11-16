@@ -1,0 +1,6 @@
+[center][color=red][size=16pt][b]markItUp! for SMF[/b][/size][/color]
+[color=blue][b][size=10pt]By Bugo[/size][/b][/color]
+
+[color=green]Модификация позволяет добавить панель для вставки BB-тегов в форму быстрого ответа.[/color]
+
+Используется скрипт [url=http://markitup.jaysalvat.com/home/]markItUp![/url] (лицензия MIT).[/center][hr]Этот мод распространяется по лицензии [url=https://opensource.org/licenses/MIT]MIT[/url]

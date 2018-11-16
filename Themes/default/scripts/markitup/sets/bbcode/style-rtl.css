@@ -1,0 +1,101 @@
+/* -------------------------------------------------------------------
+// markItUp!
+// By Jay Salvat - http://markitup.jaysalvat.com/
+// ------------------------------------------------------------------*/
+.markItUp .bold a{background-image:url(images/bold.png)}
+.markItUp .italic a{background-image:url(images/italic.png)}
+.markItUp .underline a{background-image:url(images/underline.png)}
+.markItUp .strike a{background-image:url(images/strike.png)}
+.markItUp .left a{background-image:url(../../../../images/bbc/left.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .center a{background-image:url(../../../../images/bbc/center.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .right a{background-image:url(../../../../images/bbc/right.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .justify a{background-image:url(../../../../images/bbc/justify.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .picture a{background-image:url(images/picture.png)}
+.markItUp .link a{background-image:url(images/link.png)}
+.markItUp .face a{background-image:url(images/font-name.png)}
+.markItUp .face ul{width:200px;padding:1px}
+.markItUp .face ul li a{background-image:none}
+.markItUp .face-courier a{font-family: Courier}
+.markItUp .face-arial a{font-family: Arial}
+.markItUp .face-arial-black a{font-family: "Arial Black"}
+.markItUp .face-impact a{font-family: Impact}
+.markItUp .face-verdana a{font-family: Verdana}
+.markItUp .face-times a{font-family: "Times New Roman"}
+.markItUp .face-georgia a{font-family: Georgia}
+.markItUp .face-andale-mono a{font-family: "Andale Mono"}
+.markItUp .face-trebuchet a{font-family: "Trebuchet MS"}
+.markItUp .face-comic-sans a{font-family: "Comic Sans MS"}
+.markItUp .font a{background-image:url(images/fonts.png)}
+.markItUp .font ul{width:200px;padding:1px}
+.markItUp .font ul li a{background-image:none}
+.markItUp .font .font-8 a{font-size:8pt;height:8pt}
+.markItUp .font .font-10 a{font-size:10pt;height:10pt}
+.markItUp .font .font-12 a{font-size:12pt;height:12pt}
+.markItUp .font .font-14 a{font-size:14pt;height:14pt}
+.markItUp .font .font-16 a{font-size:16pt;height:16pt}
+.markItUp .font .font-18 a{font-size:18pt;height:18pt}
+.markItUp .font .font-24 a{font-size:24pt;height:24pt}
+.markItUp .font .font-36 a{font-size:36pt;height:36pt}
+.markItUp .colors a{background-image:url(images/colors.png)}
+.markItUp .colors ul{width:110px;padding:1px}
+.markItUp .colors li{border:1px solid #FFF;width:25px;height:25px;overflow:hidden;float:right;margin:0;padding:0}
+.markItUp .colors ul a{width:25px;height:25px}
+.markItUp .colors .col1-1 a{background:#FF0}
+.markItUp .colors .col1-2 a{background:orange}
+.markItUp .colors .col1-3 a{background:red}
+.markItUp .colors .col1-4 a{background:#32CD32}
+.markItUp .colors .col2-1 a{background:blue}
+.markItUp .colors .col2-2 a{background:purple}
+.markItUp .colors .col2-3 a{background:green}
+.markItUp .colors .col2-4 a{background:#FFC0CB}
+.markItUp .colors .col3-1 a{background:#FFF}
+.markItUp .colors .col3-2 a{background:teal}
+.markItUp .colors .col3-3 a{background:#000}
+.markItUp .colors .col3-4 a{background:#F5F5DC}
+.markItUp .colors .col4-1 a{background:maroon}
+.markItUp .colors .col4-2 a{background:#A52A2A}
+.markItUp .colors .col4-3 a{background:navy}
+.markItUp .colors .col4-4 a{background:#9ACD32}
+.markItUp .colors ul a:hover,.markItUp .smileys ul a:hover{background-color:none}
+.markItUp .smileys a{background-image:url(images/smileys.png)}
+.markItUp .smileys ul{width:230px;padding:1px}
+.markItUp .smileys li{border:none;width:28px;height:28px;overflow:hidden;float:right;margin:0;padding:0}
+.markItUp .smileys ul a{width:28px;height:28px}
+.markItUp .smileys .col1-0 a{background:none;color:#000;padding:1px}
+.markItUp .list-bullet a{background-image:url(images/list-bullet.png)}
+.markItUp .list-numeric a{background-image:url(images/list-numeric.png)}
+.markItUp .list-numeric ul{width:600px}
+.markItUp .list-numeric .markItUpButton13-21,.markItUpButton .markItUpButton18-21{border:none}
+.markItUp .list-numeric li{float:right}
+.markItUp .list-item a{background-image:url(images/list-item.png)}
+.markItUp .quote_btn a{background-image:url(../../../../images/bbc/quote.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .code a{background-image:url(../../../../images/bbc/code.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .table-col a{background-image:url(images/table-col.png)}
+.markItUp .table-row a{background-image:url(images/table-row.png)}
+.markItUp .table a{background-image:url(images/table.png)}
+.markItUp .tablegenerator a{background-image:url(images/table_add.png)}
+.markItUp .calculator a{background-image:url(images/calculator.png)}
+.markItUp .dateoftheday a{background-image:url(images/date.png)}
+.markItUp .sort a {background-image:url(images/sort.png)}
+.markItUp .html a{background-image:url(images/html.png)}
+.markItUp .replace a {background-image:url(images/replace.png)}
+.markItUp .clean a{background-image:url(images/clean.png)}
+.markItUp .preview a{background-image:url(images/preview.png)}
+/* Custom hacks */
+.markItUp{width:auto !important}
+.markItUpHeader ul .markItUpDropMenu {z-index:1000}
+.markItUpEditor,#quickReplyOptions form textarea{background-image:none;min-width:98%;max-width:98%;height:150px;margin-bottom:0.3em;padding:5px}
+.markItUpHeader ul li{text-align:right}
+.bbc_table{border-spacing:2px;background:#88A6C0 url(images/catbg.jpg) repeat-x}
+.bbc_table td{background:#E9F0F6 url(images/titlebg.jpg) repeat-x 0 -17px;padding:5px}
+/* Other mods */
+.markItUp .video ul{width:260px;padding:1px}
+.markItUp .video a{background-image:url(../../../../images/bbc/video.gif);height:16px;margin-top:-2px}
+.markItUp .audio a{background-image:url(../../../../images/bbc/audio.gif)}
+.markItUp .photo a{background-image:url(../../../../images/bbc/photo.gif)}
+.markItUp .plvideo a{background-image:url(../../../../images/bbc/plvideo.gif)}
+.markItUp .plaudio a{background-image:url(../../../../images/bbc/plaudio.gif)}
+.markItUp .plphoto a{background-image:url(../../../../images/bbc/plphoto.gif)}
+.markItUp .spoiler a{background-image:url(../../../../images/bbc/spoiler.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .hide a{background-image:url(../../../../images/bbc/hide.gif);width:16px;height:16px;margin-top:-2px}
+.markItUp .latex a{background-image:url(../../../../images/bbc/latex.gif);width:16px;height:16px;margin-top:-2px}
