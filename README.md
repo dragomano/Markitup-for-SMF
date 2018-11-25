@@ -3,7 +3,7 @@
 * **License:** [MIT](https://opensource.org/licenses/MIT)
 * **Compatible with:** SMF 2.0.x
 * **Hooks only:** Yes
-* **Languages:** Russian, English
+* **Languages:** Russian, English, Spanish
 
 ## Описание
 Модификация позволяет добавить панель для вставки BB-тегов в форму быстрого ответа (а также в любые другие формы textarea, указанные в настройках).
@@ -19,5 +19,4 @@ This mod allows you to add BBCode panel for Quick Reply form.
 
 #### Примечание для версии 0.6
 * Исходный скрипт markitup обновлен для поддержки jQuery 2 и 3.
-
 * Код модификации переписан.
