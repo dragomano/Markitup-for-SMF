@@ -6,10 +6,10 @@
  * @package markItUp! for SMF
  * @link https://custom.simplemachines.org/mods/index.php?mod=3246
  * @author Bugo https://dragomano.ru/mods/markitup-for-smf
- * @copyright 2011-2018 Bugo
+ * @copyright 2011-2020 Bugo
  * @license https://opensource.org/licenses/MIT MIT
  *
- * @version 0.6
+ * @version 0.7
  */
 
 if (!defined('SMF'))
@@ -24,11 +24,16 @@ class MarkitUp
 	 */
 	public static function hooks()
 	{
-		add_integration_function('integrate_load_theme', 'MarkitUp::loadTheme', false);
-		add_integration_function('integrate_load_permissions', 'MarkitUp::loadPermissions', false);
-		add_integration_function('integrate_general_mod_settings', 'MarkitUp::generalModSettings', false);
+		add_integration_function('integrate_load_theme', __CLASS__ . '::loadTheme', false);
+		add_integration_function('integrate_load_permissions', __CLASS__ . '::loadPermissions', false);
+		add_integration_function('integrate_general_mod_settings', __CLASS__ . '::generalModSettings', false);
 	}
 
+	/**
+	 * Подключаем используемые стили и скрипты
+	 *
+	 * @return void
+	 */
 	public static function loadTheme()
 	{
 		global $modSettings, $context, $options, $txt, $settings, $sourcedir, $smcFunc;
@@ -308,7 +313,7 @@ class MarkitUp
 				{name:"' . $txt['clean'] . '", className:"clean", replaceWith:function(markitup) {return markitup.selection.replace(/\[(.*?)\]/g, "")}}
 			]
 		};
-		jQuery(document).ready(function($){
+		jQuery(document).ready(function($) {
 			$("form textarea").markItUp(mySettings);
 			$(".quickReplyContent").removeClass();
 			$("#bbcBox_message,#smileyBox_message,#message_resizer").hide();
@@ -350,21 +355,36 @@ class MarkitUp
 			$context['insert_after_template'] .= '
 			\'</div>\');
 			$(".righttext").removeClass("padding");
-			$("#emoticons").on("click", "img", function(){
+			$("#emoticons").on("click", "img", function() {
 				emoticon = $(this).attr("alt");
 				$("form textarea").focus();
-				$.markItUp({replaceWith:emoticon});
+				$.markItUp({
+					replaceWith:emoticon
+				});
 			});
 		});
 	// ]]></script>';
 		}
 	}
 
+	/**
+	 * Права доступа для использования редактора
+	 *
+	 * @param array $permissionGroups
+	 * @param array $permissionList
+	 * @return void
+	 */
 	public static function loadPermissions(&$permissionGroups, &$permissionList)
 	{
 		$permissionList['membergroup']['use_markItUp'] = array(false, 'general', 'view_basic_info');
 	}
 
+	/**
+	 * Опции мода на странице общих настроек модификаций
+	 *
+	 * @param array $config_vars
+	 * @return void
+	 */
 	public static function generalModSettings(&$config_vars)
 	{
 		if (isset($config_vars[0]))

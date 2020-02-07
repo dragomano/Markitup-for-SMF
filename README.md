@@ -1,9 +1,12 @@
 # markItUp for SMF
+![SMF 2.0](https://img.shields.io/badge/SMF-2.0-75879b.svg?style=flat)
+![License](https://img.shields.io/github/license/dragomano/markitup-for-smf)
+
 * **Author:** Bugo [dragomano.ru](https://dragomano.ru/mods/markitup-for-smf)
 * **License:** [MIT](https://opensource.org/licenses/MIT)
-* **Compatible with:** SMF 2.0.x
+* **Compatible with:** SMF 2.0.*
 * **Hooks only:** Yes
-* **Languages:** Russian, English, Spanish
+* **Languages:** Russian, English, Serbian, Spanish
 
 ## Описание
 Модификация позволяет добавить панель для вставки BB-тегов в форму быстрого ответа (а также в любые другие формы textarea, указанные в настройках).
