@@ -9,8 +9,8 @@ if ((SMF == 'SSI') && !$user_info['is_admin'])
 	die('Admin privileges required.');
 
 $hooks = array(
-	'integrate_pre_include' => '$sourcedir/Class-MarkitUp.php',
-	'integrate_pre_load'    => 'MarkitUp::hooks'
+	'integrate_pre_include' => '$sourcedir/Class-MarkItUp.php',
+	'integrate_pre_load'    => 'MarkItUp::hooks'
 );
 
 if (!empty($context['uninstalling']))

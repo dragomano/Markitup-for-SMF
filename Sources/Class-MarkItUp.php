@@ -9,13 +9,13 @@
  * @copyright 2011-2020 Bugo
  * @license https://opensource.org/licenses/MIT MIT
  *
- * @version 0.7
+ * @version 0.7.1
  */
 
 if (!defined('SMF'))
 	die('Hacking attempt...');
 
-class MarkitUp
+class MarkItUp
 {
 	/**
 	 * Подключаем необходимые хуки
