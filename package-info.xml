@@ -4,7 +4,7 @@
 	<id>Bugo:markItUp</id>
 	<name>markItUp! for SMF</name>
 	<type>modification</type>
-	<version>0.7</version>
+	<version>0.7.1</version>
 
 	<install for="2.0 - 2.0.99">
 		<readme parsebbc="true" lang="russian-utf8">readme/russian-utf8.txt</readme>
